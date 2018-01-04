@@ -10,5 +10,5 @@ Students are expected to:
 Student Info
 =======================
 
-* Name: Example Name
-* ID: *YourIdHere*
+* Name: Vu Ngoc Quang
+* ID: USTHBI6-124
