@@ -1,0 +1,84 @@
+echo hello world
+hello world
+
+
+passwd 
+Changing password for quangvu.
+(current) UNIX password: 
+Enter new UNIX password: 
+Retype new UNIX password: 
+passwd: password updated successfully
+
+
+date
+Thứ sáu, 05 Tháng 1 năm 2018 11:00:06 +07
+
+
+hostname
+quangvu-GL552JX
+
+
+arch
+x86_64
+
+
+uname -a
+Linux quangvu-GL552JX 4.13.0-21-generic #24-Ubuntu SMP Mon Dec 18 17:29:16 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+
+
+dmesg
+[    0.000000] random: get_random_bytes called from start_kernel+0x42/0x4e1 with crng_init=0
+[    0.000000] Linux version 4.13.0-21-generic (buildd@lgw01-amd64-037) (gcc version 7.2.0 (Ubuntu 7.2.0-8ubuntu3)) #24-Ubuntu SMP Mon Dec 18 17:29:16 UTC 2017 (Ubuntu 4.13.0-21.24-generic 4.13.13)
+[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-4.13.0-21-generic root=UUID=b796066a-89f7-43e9-ada9-9e7d9853876c ro quiet splash vt.handoff=7
+[    0.000000] KERNEL supported cpus:
+[    0.000000]   Intel GenuineIntel
+[    0.000000]   AMD AuthenticAMD
+[    0.000000]   Centaur CentaurHauls
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x001: 'x87 floating point registers'
+[    0.000000] x86/fpu: Supporting XSAVE feature 0x002: 'SSE registers'
+
+
+uptime
+ 10:45:32 up 5 min,  1 user,  load average: 0,19, 0,46, 0,26
+
+
+who am i
+whoami
+quangvu
+
+
+who
+quangvu  tty2         2018-01-05 10:40 (/dev/tty2)
+
+
+id
+uid=1000(quangvu) gid=1000(quangvu) groups=1000(quangvu),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),118(lpadmin),128(sambashare)
+
+
+last
+quangvu  tty2         /dev/tty2        Fri Jan  5 10:40   still logged in
+reboot   system boot  4.13.0-21-generi Fri Jan  5 10:40   still running
+quangvu  tty2         /dev/tty2        Fri Jan  5 15:31 - 10:09  (-5:-22)
+reboot   system boot  4.13.0-21-generi Fri Jan  5 15:31 - 10:09  (-5:-21)
+quangvu  tty2         /dev/tty2        Fri Jan  5 15:26 - down   (00:04)
+reboot   system boot  4.13.0-21-generi Fri Jan  5 15:25 - 15:31  (00:05)
+quangvu  tty2         /dev/tty2        Fri Jan  5 15:06 - 15:23  (00:17)
+reboot   system boot  4.13.0-21-generi Fri Jan  5 15:05 - 15:23  (00:18)
+reboot   system boot  4.13.0-21-generi Fri Jan  5 15:04 - 15:23  (00:19)
+quangvu  tty2         /dev/tty2        Fri Jan  5 14:57 - down   (00:07)
+reboot   system boot  4.13.0-21-generi Fri Jan  5 14:56 - 15:04  (00:07)
+
+
+finger
+Login     Name       Tty      Idle  Login Time   Office     Office Phone
+quangvu   Quang Vu   tty2       11  Jan  5 10:40 (/dev/tty2)
+
+
+w
+ 10:52:19 up 12 min,  1 user,  load average: 0,34, 0,34, 0,25
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+quangvu  tty2     /dev/tty2        10:40   12:02   1:05   0.04s /usr/lib/x86_64-linux-gnu/deja-dup/deja-dup-monitor
+
+
+
+
