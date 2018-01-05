@@ -11,7 +11,7 @@ passwd: password updated successfully
 
 
 date
-Thứ sáu, 05 Tháng 1 năm 2018 11:00:06 +07
+Fri Jan  5 03:49:31 UTC 2018
 
 
 hostname
