@@ -1,0 +1,34 @@
+~$ grep list * -1R
+os2018-1/.git/hooks/pre-rebase.sample-# Is topic fully merged to master?
+os2018-1/.git/hooks/pre-rebase.sample:not_in_master=`git rev-list --pretty=oneline ^master "$topic"`
+os2018-1/.git/hooks/pre-rebase.sample-if test -z "$not_in_master"
+--
+os2018-1/.git/hooks/pre-rebase.sample-# Is topic ever merged to next?  If so you should not be rebasing it.
+os2018-1/.git/hooks/pre-rebase.sample:only_next_1=`git rev-list ^master "^$topic" ${publish} | sort`
+os2018-1/.git/hooks/pre-rebase.sample:only_next_2=`git rev-list ^master           ${publish} | sort`
+os2018-1/.git/hooks/pre-rebase.sample-if test "$only_next_1" = "$only_next_2"
+os2018-1/.git/hooks/pre-rebase.sample-then
+os2018-1/.git/hooks/pre-rebase.sample:	not_in_topic=`git rev-list "^$topic" master`
+os2018-1/.git/hooks/pre-rebase.sample-	if test -z "$not_in_topic"
+
+
+
+wc -l /etc/passwd
+41 /etc/passwd
+
+
+free -m 
+              total        used        free      shared  buff/cache   available
+Mem:           5853        1209        3318         259        1325        4380
+Swap:          1426           0        1426
+
+
+grep -m 1 'cpu cores' /proc/cpuinfo
+cpu cores	: 2
+
+
+cd ~/Pictures
+find -name "*.jpg" | wc -l
+0
+
+
