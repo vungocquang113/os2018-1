@@ -1,16 +1,9 @@
-~$ grep list * -1R
-os2018-1/.git/hooks/pre-rebase.sample-# Is topic fully merged to master?
-os2018-1/.git/hooks/pre-rebase.sample:not_in_master=`git rev-list --pretty=oneline ^master "$topic"`
-os2018-1/.git/hooks/pre-rebase.sample-if test -z "$not_in_master"
---
-os2018-1/.git/hooks/pre-rebase.sample-# Is topic ever merged to next?  If so you should not be rebasing it.
-os2018-1/.git/hooks/pre-rebase.sample:only_next_1=`git rev-list ^master "^$topic" ${publish} | sort`
-os2018-1/.git/hooks/pre-rebase.sample:only_next_2=`git rev-list ^master           ${publish} | sort`
-os2018-1/.git/hooks/pre-rebase.sample-if test "$only_next_1" = "$only_next_2"
-os2018-1/.git/hooks/pre-rebase.sample-then
-os2018-1/.git/hooks/pre-rebase.sample:	not_in_topic=`git rev-list "^$topic" master`
-os2018-1/.git/hooks/pre-rebase.sample-	if test -z "$not_in_topic"
-
+ls
+Desktop           google-chrome-stable_current_amd64.deb  Public     wget-log
+Documents         Music                                   steam.deb
+Downloads         os2018-1                                Templates
+examples.desktop  Pictures                                Videos
+ls | grep list
 
 
 wc -l /etc/passwd
