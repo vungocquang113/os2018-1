@@ -1,0 +1,54 @@
+ps -A
+ 2070 tty2     00:00:01 nautilus-deskto
+ 2073 tty2     00:00:00 indicator-messa
+ 2086 ?        00:00:00 evolution-addre
+ 2101 ?        00:00:00 gvfsd-trash
+ 2114 ?        00:00:00 fwupd
+ 2452 ?        00:00:00 gconfd-2
+ 3117 tty2     00:03:49 firefox
+ 3662 tty2     00:04:31 Web Content
+ 3836 tty2     00:00:36 Web Content
+ 3878 tty2     00:00:00 update-notifier
+.
+.
+.
+gnome-calculator &
+[1] 26419
+.
+.
+.
+ps aux | grep -i gnome-calculator | awk {'print $2'}
+26419
+.
+.
+.
+cat /proc/26419/status
+Name:	gnome-calculato
+Umask:	0022
+State:	S (sleeping)
+Tgid:	26419
+Ngid:	0
+Pid:	26419
+PPid:	26378
+TracerPid:	0
+Uid:	1000	1000	1000	1000
+Gid:	1000	1000	1000	1000
+FDSize:	256
+.
+.
+.
+kill -STOP 26419
+
+[1]+  Stopped                 gnome-calculator
+.
+.
+.
+ kill -CONT 26419
+.
+.
+.
+kill -KILL 26419
+[1]+  Killed                  gnome-calculator
+
+
+
