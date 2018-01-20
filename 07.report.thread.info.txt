@@ -1,0 +1,18 @@
+ps -A
+ 1814 tty2     00:00:22 firefox
+ 1873 tty2     00:00:17 Web Content
+ 1918 ?        00:00:00 gconfd-2
+ 1999 tty2     00:00:00 update-notifier
+ 2071 tty2     00:00:00 deja-dup-monito
+ 2112 tty2     00:00:21 Web Content
+ 2183 ?        00:00:00 gnome-terminal-
+ 2192 pts/0    00:00:00 bash
+ 2202 pts/0    00:00:00 ps
+.
+.
+.
+ps -o nlwp 1814
+NLWP
+  60
+
+
